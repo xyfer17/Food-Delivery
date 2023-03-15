@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 import logo from "../assets/images/res-logo.png";
 import { NavLink, Link } from "react-router-dom";
+import "../styles/header.css";
 
 const nav_links = [
   { display: "Home", path: "/home" },
@@ -25,7 +26,13 @@ const Header = () => {
           <div className="navigation">
             <div className="menu d-flex align-items-center gap-5">
               {nav_links.map((item, index) => (
-                <NavLink to={item.path} key={index}>
+                <NavLink
+                  to={item.path}
+                  key={index}
+                  className={(navClass) =>
+                    navClass.isActive ? "active__menu" : ""
+                  }
+                >
                   {item.display}
                 </NavLink>
               ))}
