@@ -56,14 +56,26 @@ const Footer = () => {
             <div className="newsletter">
               <input type="email" placeholder="Enter your email" />
               <span>
-                <i className="ri-github-line"></i>
+                <i className="ri-send-plane-line"></i>
               </span>
-              <span>
-                {" "}
-                <Link to=" https://www.linkedin.com/in/xyfer17/">
-                  <i class="ri-linkedin-line"></i>
-                </Link>{" "}
-              </span>
+            </div>
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col lg="6" md="6">
+            <p className="copyright__text">
+              Copyright - 2022, website made by Naveen
+            </p>
+          </Col>
+          <Col lg="6" md="6">
+            <div className="social__links d-flex  align-items-center gap-4 justify-content-end">
+              <p className="m-0">
+                <span>
+                  <Link to="https://github.com/xyfer17">
+                    <i class="ri-github-line"></i>
+                  </Link>
+                </span>
+              </p>
             </div>
           </Col>
         </Row>
