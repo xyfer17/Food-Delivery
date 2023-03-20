@@ -29,6 +29,12 @@
 .order__btn{
     background:#df2020;
     color: #fff;
+    transition: 0.3s;
+}
+
+.order__btn:hover {
+    background: #212245;
+    
 }
 
 .all__foods-btn{
@@ -47,6 +53,7 @@
 }
 
 .shipping__icon i{
+
     padding: 5px;
     background:#df2020;
     color: #fff;

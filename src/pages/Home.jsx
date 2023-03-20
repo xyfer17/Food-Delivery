@@ -8,6 +8,9 @@ import featureImg01 from "../assets/images/service-01.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
 import { Link } from "react-router-dom";
+import "../styles/home.css";
+
+import Category from "../components/UI/category/Category";
 
 const featureData = [
   {
@@ -48,7 +51,7 @@ const Home = () => {
                 </p>
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
-                  <button className="order_-btn d-flex align-items-center justify-content-between">
+                  <button className="order__btn d-flex align-items-center justify-content-between">
                     Order Now
                     <i className="ri-arrow-right-s-line"></i>
                   </button>
@@ -79,6 +82,40 @@ const Home = () => {
                 <img src={heroImg} alt="" className="w-100" />
               </div>
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="pt-0">
+        <Category />
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lang="12" className="text-center">
+              <h5 className="feature__subtitle mb-4"> what we serve</h5>
+              <h2 className="feature__title">Just sit back at home</h2>
+              <h2 className="feature__title">
+                we will <span>take care</span>
+              </h2>
+              <p className="mb-1 mt-4 feature__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                officiis?
+              </p>
+              <p className="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius.{" "}
+              </p>
+            </Col>
+            {featureData.map((item, index) => (
+              <Col lg="4" md="6" sm="6" key={index} className="mt-5">
+                <div className="feature__item text-center px-5 py-3">
+                  <img src={item.imgUrl} alt="" className="w-25 mb-3" />
+                  <h5 className="fw-bold mb-3">{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
