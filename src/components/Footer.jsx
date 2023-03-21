@@ -72,7 +72,7 @@ const Footer = () => {
               <p className="m-0">
                 <span>
                   <Link to="https://github.com/xyfer17">
-                    <i class="ri-github-line"></i>
+                    <i className="ri-github-line"></i>
                   </Link>
                 </span>
               </p>
