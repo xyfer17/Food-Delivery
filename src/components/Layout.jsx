@@ -2,12 +2,19 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Router from "../routes/Router";
+import Carts from "./UI/cart/Carts";
 
 const Layout = () => {
   return (
     <div>
       <Header />
-      <Router />
+
+      <Carts />
+
+      <div>
+        <Router />
+      </div>
+
       <Footer />
     </div>
   );
