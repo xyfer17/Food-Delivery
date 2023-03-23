@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { ListGroupItem } from "reactstrap";
 import { cartActions } from "../../../store/shopping-cart/cartSlice";
+import "../../../styles/cart-item.css";
 
 const CartItem = ({ item }) => {
   const { id, title, price, image01, quantity, totalPrice } = item;
