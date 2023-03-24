@@ -7,6 +7,7 @@ import products from "../assets/fake-data/products";
 import { cartActions } from "../store/shopping-cart/cartSlice";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import CommonSection from "../components/UI/common-section/CommonSection";
+import "../styles/product-details.css";
 
 const FoodDetails = () => {
   const { id } = useParams();
@@ -53,7 +54,7 @@ const FoodDetails = () => {
         <Container>
           <Row>
             <Col lg="2" md="2">
-              <div className="product__imgages">
+              <div className="product__images">
                 <div className="img__item mb-3">
                   <img
                     src={product.image01}
@@ -169,7 +170,7 @@ const FoodDetails = () => {
                       />
                     </div>
 
-                    <button type="submit" className="addTOCart__btn">
+                    <button type="submit" className="addToCart__btn">
                       Submit
                     </button>
                   </form>
