@@ -31,11 +31,11 @@
 
 .menu a:hover{
    
-    color: #df2020;
+    color: #e67e22;
 }
 
 .active__menu{
-    color: #df2020 !important;
+    color: #e67e22 !important;
 }
 
 .cart__icon i,.user i,.mobile i{
@@ -52,7 +52,7 @@
     position: absolute;
     top:30px;
     right: -10px;
-    background:#df2020;
+    background:#e67e22;
     color: #fff;;
     width: 15px;
     height: 15px;
@@ -76,7 +76,7 @@
     left: 0;
     background: #fff;
     z-index: 99999;
-    box-shadow: 5px 5px 15px -5px #fde4e4;
+    box-shadow: 5px 5px 15px -5px #fdede4;
 }
 
 @media only screen and (max-width:992px) {

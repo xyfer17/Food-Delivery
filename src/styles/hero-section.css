@@ -1,5 +1,5 @@
 .hero__title span{
-    color: #df2020;
+    color: #e67e22;
 }
 
 .hero__title{
@@ -27,7 +27,7 @@
 }
 
 .order__btn{
-    background:#df2020;
+    background:#e67e22;
     color: #fff;
     transition: 0.3s;
 }
@@ -39,11 +39,11 @@
 
 .all__foods-btn{
     background: transparent;
-    border: 1px solid #df2020 !important;
+    border: 1px solid #e67e22 !important;
 }
 
 .all__foods-btn a{
-    color: #df2020;
+    color: #e67e22;
 }
 
 .hero__service p{
@@ -55,7 +55,7 @@
 .shipping__icon i{
 
     padding: 5px;
-    background:#df2020;
+    background:#e67e22;
     color: #fff;
     border-radius: 50%;
     font-weight: 500 !important;
